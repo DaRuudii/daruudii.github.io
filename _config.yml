@@ -107,31 +107,19 @@ analytics:
 author:
   name   : "DaRuudii"
   avatar : "/assets/img/daruudii.png"
-  bio    : "Interested in infosec, malware research and all computer related stuff"
+  bio    : "Interested in infosec, current IBM Champion for Security"
   location         : "Germany"
   email  : # optional
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+    - label: "IBM Champion"
+      icon: "fas fa-fw fa-trophy"
+      url: "https://developer.ibm.com/champions/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/DaRuudii"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/daruudii/"
-    - label: "Telegram"
-      icon: "fas fa-paper-plane"
-      # url: "https://t.me/channelname"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
 
 # Site Footer
 footer:
