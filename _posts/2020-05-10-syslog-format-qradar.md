@@ -142,7 +142,7 @@ This template is the same as the `RSYSLOG_SyslogProtocol23Format` except it feat
 
 Then the template must be used in the `/etc/rsyslog.d/qradar.conf` file.
 
-```config
+```
 :msg, contains, "MARK"  @@192.168.0.20:514;QRadarForwardFormat
 authpriv.*;*.err        @@192.168.0.20:514;QRadarForwardFormat
 ```
