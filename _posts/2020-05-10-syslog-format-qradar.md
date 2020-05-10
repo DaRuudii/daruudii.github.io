@@ -35,11 +35,11 @@ With this configuration all events from the syslog facility `authpriv` and error
 
 After some authentication actions (`su -` and a `logout`) have been performed on the Linux system events have been send to QRadar. Unfortunately, as seen in the screenshot from QRadar the logs have not been assigned to a log source as no log source has been created. Often log sources are auto discovered in QRadar but this depends heavily on the log source type and the incoming logs.
 
-![Screenshot of the so far unknown logs](/assets/img/2020-05-15-syslog-format-qradar/qradar-simgeneric.png)
+![Screenshot of the so far unknown logs](/assets/img/2020-05-10-syslog-format-qradar/qradar-simgeneric.png)
 
 After the log source has been created with the hostname of the CentOS system as identifier the same commands lead to correct events in QRadar.
 
-![Screenshot of the parsed logs](/assets/img/2020-05-15-syslog-format-qradar/qradar-logs.png)
+![Screenshot of the parsed logs](/assets/img/2020-05-10-syslog-format-qradar/qradar-logs.png)
 
 At this point one could already be satisfied with the result. But in my opinion, there can be done more.
 
@@ -105,7 +105,7 @@ If the module is enabled, it can be used to forward MARK messages to QRadar. Add
 
 In QRadar the MARK messages have no specific QID so the events are displayed as `Linux login messages Message`. Which is one of the generic fallback events for Linux log sources if no other QID can be mapped.
 
-![Screenshot of the MARK events in QRadar](/assets/img/2020-05-15-syslog-format-qradar/qradar-mark.png)
+![Screenshot of the MARK events in QRadar](/assets/img/2020-05-10-syslog-format-qradar/qradar-mark.png)
 
 # Hostname or IP address?
 
@@ -123,7 +123,7 @@ Given the following payload we have no IP addresses which could populate the sou
 
 In that case QRadar uses the source IP address from the network packet in which the payload was sent.
 
-![Screenshot of the IP information of an event in QRadar](/assets/img/2020-05-15-syslog-format-qradar/qradar-ipinfo.png)
+![Screenshot of the IP information of an event in QRadar](/assets/img/2020-05-10-syslog-format-qradar/qradar-ipinfo.png)
 
 In my case the IP address in QRadar is the correct one because the system is sending its logs directly to QRadar. In the case of an additional syslog server between log source and QRadar the IP address shown in QRadar would be the one of the syslog server.
 
