@@ -14,13 +14,13 @@ When sending events from a Linux system to QRadar one must configure a syslog da
 
 In this blog post the environment uses the following systems and software:
 
-__QRadar 7.3.3 Patch 3__ \
-IP: 192.168.0.20 \
+__QRadar 7.3.3 Patch 3__  
+IP: 192.168.0.20  
 hostname: qradar733
 
-__CentOS 8.1.1911__ \
-IP: 192.168.0.42 \
-hostname: vctest01 \
+__CentOS 8.1.1911__  
+IP: 192.168.0.42  
+hostname: vctest01  
 with rsyslog 8.37.0
 
 # The basic configuration
